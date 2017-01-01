@@ -17,8 +17,7 @@ function cartSummary(intent, session, callback) {
 
     clicklist.cartSummary().then(summary => {
         if (summary.itemCount > 0) {
-            speechOutput = `You have ${summary.itemCount} item${summary.itemCount === 1 ? "" : "s"} 
-                in your cart. Your current total is ${summary.total} dollars.`;
+            speechOutput = `You have ${summary.itemCount} item${summary.itemCount === 1 ? "" : "s"} in your cart for a total of ${summary.total} dollars.`;
         } else {
             speechOutput = "Your cart is empty";
         }
@@ -34,7 +33,7 @@ function itemInCart(intent, session, callback) {
 
     if (itemSlot) {
         const item = itemSlot.value;
-        clicklist.findItemInCart(itemSlot.value).then(cartItem => {
+        clicklist.findItemInCart(item).then(cartItem => {
             if (cartItem) {
                 speechOutput = `There are ${cartItem.qty} ${cartItem.name} in your cart.`;
             } else {
