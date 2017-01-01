@@ -1,0 +1,24 @@
+CartSummaryIntent cart
+CartSummaryIntent summarize cart
+CartSummaryIntent what is in my cart
+CartSummaryIntent what's in my cart
+
+CartItemIntent is {Item} in my cart
+CartItemIntent is there {Item} in my cart
+CartItemIntent are {Item} in my cart
+CartItemIntent are there {Item} in my cart
+CartItemIntent are there any {Item} in my cart
+CartItemIntent do I have {Item} in my cart
+CartItemIntent do I have any {Item} in my cart
+CartItemIntent how many {Item} are in my cart
+
+AddItemIntent buy {Qty} {Item}
+AddItemIntent add {Qty} {Item} to my cart
+AddItemIntent add {Qty} can of {Item} to my cart
+AddItemIntent add {Qty} cans of {Item} to my cart
+AddItemIntent add {Qty} pound of {Item} to my cart
+AddItemIntent add {Qty} pounds of {Item} to my cart
+AddItemIntent add {Qty} bag of {Item} to my cart
+AddItemIntent add {Qty} bags of {Item} to my cart
+AddItemIntent add {Qty} bottle of {Item} to my cart
+AddItemIntent add {Qty} bottles of {Item} to my cart

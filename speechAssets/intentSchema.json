@@ -1,0 +1,47 @@
+{
+  "intents": [
+    {
+      "intent": "ListCartIntent"
+    },
+    {
+      "intent": "CartItemIntent",
+      "slots": [
+        {
+          "name": "Item",
+          "type": "AMAZON.Food"
+        }
+      ]
+    },
+    {
+      "intent": "AddItemIntent",
+      "slots": [
+        {
+          "name": "Item",
+          "type": "AMAZON.Food"
+        },
+        {
+          "name": "Qty",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.RepeatIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
