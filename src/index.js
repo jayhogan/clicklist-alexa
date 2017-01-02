@@ -38,7 +38,7 @@ exports.handler = (event, context, callback) => {
 
             alexa.onIntent(event.request, event.session)
                 .then(speechletResponse => {
-                    let response = utils.buildResponse(sessionAttributes, speechletResponse);
+                    let response = utils.buildResponse({}, speechletResponse);
 
                     winston.info('intent request response', [metadata, response]);
 
