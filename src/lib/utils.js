@@ -1,4 +1,5 @@
 'use strict';
+var winston = require('winston');
 
 function buildSpeechletResponse(title, output, repromptText, shouldEndSession) {
     return {
@@ -29,5 +30,29 @@ function buildResponse(sessionAttributes, speechletResponse) {
     };
 }
 
+function loggingMetadata(filename, method) {
+    return {
+        module: 'clicklist-alexa',
+        filename: filename,
+        method: method,
+        ts: new Date()
+    };
+}
+
+function logEnd(method) {
+    return function(resp) {
+        debug('end', method);
+        return resp;
+    }
+}
+
+function logAndThrow(method) {
+    return function(err) {
+        error(err, method, {err: err});
+        throw err;
+    }
+}
+
 exports.buildSpeechletResponse = buildSpeechletResponse;
 exports.buildResponse = buildResponse;
+exports.loggingMetadata = loggingMetadata;

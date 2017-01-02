@@ -1,6 +1,6 @@
 {
   "name": "clicklist-alexa",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Kroger Clicklist Alexa Skill",
   "main": "index.js",
   "private": true,
@@ -23,9 +23,10 @@
   },
   "homepage": "https://github.com/jayhogan/clicklist-alexa#readme",
   "dependencies": {
-    "clicklist-client": "^0.2.1",
+    "clicklist-client": "^0.2.2",
     "dotenv": "^2.0.0",
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "winston": "^2.3.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
