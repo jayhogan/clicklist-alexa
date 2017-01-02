@@ -9,15 +9,9 @@ exports.handler = (event, context, callback) => {
     try {
         console.log(`event.session.application.applicationId=${event.session.application.applicationId}`);
 
-        /**
-         * Uncomment this if statement and populate with your skill's application ID to
-         * prevent someone else from configuring a skill that sends requests to this function.
-         */
-        /*
-        if (event.session.application.applicationId !== 'amzn1.echo-sdk-ams.app.[unique-value-here]') {
+        if (event.session.application.applicationId !== 'amzn1.ask.skill.0c002494-7641-4438-bfb6-425b158b7a28') {
              callback('Invalid Application ID');
         }
-        */
 
         if (event.session.new) {
             alexa.onSessionStarted({ requestId: event.request.requestId }, event.session);

@@ -57,7 +57,7 @@ function addToCart(intent, session, callback) {
     let speechOutput = '';
 
     if (itemSlot) {
-        let qty = qtySlot ? qtySlot.value : 1;
+        let qty = qtySlot && qtySlot.value ? qtySlot.value : 1;
 
         const item = itemSlot.value;
         clicklist.addToCart(item, qty).then(status => {

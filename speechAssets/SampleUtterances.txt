@@ -1,24 +1,52 @@
-CartSummaryIntent cart
+CartSummaryIntent cart summary
+CartSummaryIntent for cart summary
 CartSummaryIntent summarize cart
+CartSummaryIntent to summarize cart
 CartSummaryIntent what is in my cart
 CartSummaryIntent what's in my cart
 
 CartItemIntent is {Item} in my cart
+CartItemIntent if {Item} is in my cart
 CartItemIntent is there {Item} in my cart
 CartItemIntent are {Item} in my cart
+CartItemIntent if {Item} are in my cart
 CartItemIntent are there {Item} in my cart
+CartItemIntent if are there {Item} in my cart
 CartItemIntent are there any {Item} in my cart
+CartItemIntent if are there any {Item} in my cart
 CartItemIntent do I have {Item} in my cart
 CartItemIntent do I have any {Item} in my cart
 CartItemIntent how many {Item} are in my cart
 
+AddItemIntent add {Item}
+AddItemIntent add {Qty} {Item}
+AddItemIntent add {Qty} can of {Item}
+AddItemIntent add {Qty} cans of {Item}
+AddItemIntent add {Qty} pound of {Item}
+AddItemIntent add {Qty} pounds of {Item}
+AddItemIntent add {Qty} ounce of {Item}
+AddItemIntent add {Qty} ounces of {Item}
+AddItemIntent add {Qty} bag of {Item}
+AddItemIntent add {Qty} bags of {Item}
+AddItemIntent add {Qty} bottle of {Item}
+AddItemIntent add {Qty} bottles of {Item}
+AddItemIntent add {Qty} package of {Item}
+AddItemIntent add {Qty} packages of {Item}
+AddItemIntent add {Qty} box of {Item}
+AddItemIntent add {Qty} boxes of {Item}
+AddItemIntent buy {Item}
 AddItemIntent buy {Qty} {Item}
-AddItemIntent add {Qty} {Item} to my cart
-AddItemIntent add {Qty} can of {Item} to my cart
-AddItemIntent add {Qty} cans of {Item} to my cart
-AddItemIntent add {Qty} pound of {Item} to my cart
-AddItemIntent add {Qty} pounds of {Item} to my cart
-AddItemIntent add {Qty} bag of {Item} to my cart
-AddItemIntent add {Qty} bags of {Item} to my cart
-AddItemIntent add {Qty} bottle of {Item} to my cart
-AddItemIntent add {Qty} bottles of {Item} to my cart
+AddItemIntent buy {Qty} can of {Item}
+AddItemIntent buy {Qty} cans of {Item}
+AddItemIntent buy {Qty} pound of {Item}
+AddItemIntent buy {Qty} pounds of {Item}
+AddItemIntent buy {Qty} ounce of {Item}
+AddItemIntent buy {Qty} ounces of {Item}
+AddItemIntent buy {Qty} bag of {Item}
+AddItemIntent buy {Qty} bags of {Item}
+AddItemIntent buy {Qty} bottle of {Item}
+AddItemIntent buy {Qty} bottles of {Item}
+AddItemIntent buy {Qty} package of {Item}
+AddItemIntent buy {Qty} packages of {Item}
+AddItemIntent buy {Qty} box of {Item}
+AddItemIntent buy {Qty} boxes of {Item}
