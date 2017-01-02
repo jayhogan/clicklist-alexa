@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/jayhogan/clicklist-alexa#readme",
   "dependencies": {
-    "clicklist-client": "^0.2.0",
+    "clicklist-client": "^0.2.1",
     "dotenv": "^2.0.0",
     "request": "^2.79.0"
   },
