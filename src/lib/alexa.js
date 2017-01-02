@@ -18,7 +18,8 @@ function cartSummary(intent, session) {
 
     return clicklist.cartSummary().then(summary => {
         if (summary.itemCount > 0) {
-            speechOutput = `You have ${summary.itemCount} item${summary.itemCount === 1 ? "" : "s"} in your cart for a total of ${summary.total} dollars.`;
+            let amount = utils.speekDollars(summary.total);
+            speechOutput = `You have ${summary.itemCount} item${summary.itemCount === 1 ? "" : "s"} in your cart for a total of ${amount}.`;
         } else {
             speechOutput = "Your cart is empty";
         }

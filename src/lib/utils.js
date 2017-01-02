@@ -1,5 +1,6 @@
 'use strict';
 var winston = require('winston');
+var _ = require('lodash');
 
 function buildSpeechletResponse(title, output, repromptText, shouldEndSession) {
     return {
@@ -39,20 +40,17 @@ function loggingMetadata(filename, method) {
     };
 }
 
-function logEnd(method) {
-    return function(resp) {
-        debug('end', method);
-        return resp;
+function speekDollars(amount) {
+    let amountStr = _.toString(amount);
+    let tokens = amountStr.split('.');
+    let response = tokens[0] + ' dollars';
+    if (tokens.length > 1 && parseInt(tokens[1]) > 0) {
+        response += ` and ${tokens[1]} cents`;
     }
-}
-
-function logAndThrow(method) {
-    return function(err) {
-        error(err, method, {err: err});
-        throw err;
-    }
+    return response;
 }
 
 exports.buildSpeechletResponse = buildSpeechletResponse;
 exports.buildResponse = buildResponse;
 exports.loggingMetadata = loggingMetadata;
+exports.speekDollars = speekDollars;
